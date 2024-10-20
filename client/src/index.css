@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,1..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* src/index.css or your main CSS file */
+.mySwiper {
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Hide overflow for a cleaner look */
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #ff6347; /* Change the color of navigation buttons */
+  }
+  
+  .swiper-pagination-bullet {
+    background: #ff6347; /* Customize pagination bullets */
+  }
+
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .card-wrapper {
+    width: calc(25% - 1rem); /* Four cards per row with space */
+    margin-bottom: 1rem; /* Space between rows */
+  }
+  
+  @media (max-width: 768px) {
+    .card-wrapper {
+      width: calc(50% - 1rem); /* Two cards per row for small screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card-wrapper {
+      width: 100%; /* One card per row for extra small screens */
+    }
+  }
+  
+  .btn-attractive {
+    background: #ff9500; /* Use Tailwind's orange-400 color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 0.5rem 1rem; /* Adjusted padding */
+    font-size: 0.875rem; /* Slightly larger font size */
+    border-radius: 9999px; /* Full round shape */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: all 0.3s ease; /* Smooth transition */
+    width: 9rem; /* w-40 corresponds to 10rem */
+    height: 3rem; /* h-20 corresponds to 5rem */
+}
+
+.btn-attractive:hover {
+    transform: scale(1.1); /* Slightly larger on hover */
+    background: #f97316; /* Use Tailwind's orange-600 color */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+
+
+.btn-attractive1 {
+  background: #facc15; /* Use Tailwind's yellow-400 color */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 0.5rem 1rem; /* Adjusted padding */
+  font-size: 0.875rem; /* Slightly larger font size */
+  border-radius: 9999px; /* Full round shape */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  transition: all 0.3s ease; /* Smooth transition */
+  width: 9rem; /* Adjusted width */
+  height: 3rem; /* Adjusted height */
+}
+
+.btn-attractive1:hover {
+  transform: scale(1.1); /* Slightly larger on hover */
+  background: #f8b50b; /* Use Tailwind's yellow-600 color */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+
+
+/* For Webkit browsers like Chrome and Safari */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+  
+  
